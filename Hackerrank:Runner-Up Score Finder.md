@@ -18,10 +18,27 @@ To write a Python program that takes a list of scores from participants and find
 
 ---
 
-## 💻 PROGRAM:
+## 💻Program
 
-ADD CODE HERE
+```python
+n = int(input())
 
-## OUTPUT
+scores = list(map(int, input().split()))
 
-## RESULT
+scores = list(set(scores))
+scores.sort()
+
+print(scores[-2])
+```
+
+## Output
+
+```text
+5
+2 3 6 6 5
+5
+```
+
+## Result
+
+Thus, the Python program was successfully executed to find the runner-up score by removing duplicate values and selecting the second-highest score.
