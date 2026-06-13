@@ -25,12 +25,52 @@ To write a Python program to:
 
 ---
 
-## 💻  Program
+## 💻Program
 
-Add Code Here
+```python
+students = []
+
+n = int(input())
+
+for i in range(n):
+    name = input()
+    grade = float(input())
+    students.append([name, grade])
+
+grades = sorted(set([student[1] for student in students]))
+second_lowest = grades[1]
+
+names = []
+
+for student in students:
+    if student[1] == second_lowest:
+        names.append(student[0])
+
+for name in sorted(names):
+    print(name)
+```
 
 ## Output
 
+```text
+5
+Harry
+37.21
+Berry
+37.21
+Tina
+37.2
+Akriti
+41
+Harsh
+39
+
+Berry
+Harry
+```
+
 ## Result
+
+Thus, the Python program was successfully executed to find and display the students having the second lowest grade in alphabetical order.
 
 
